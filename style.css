@@ -1,0 +1,104 @@
+body {
+    background-color: rgb(13, 7, 20);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+.container {
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.todo-app {
+    background-color: rgb(13, 7, 20);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    display: grid;
+    gap: 20px;
+}
+
+#add-task {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    padding: 10px;
+    background-color: rgb(13, 7, 20);
+    border-radius: 7px;
+    border: 2px solid rgb(62, 22, 113);
+    color: white;
+    outline: none;
+}
+
+
+#task-input:focus {
+    border: 2px solid rgb(62, 22, 113);
+    background-color: rgb(13, 7, 20);
+    color: white;
+}
+
+.add-btn {
+    background: rgb(100, 60, 150);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.tasks-title, .done-title {
+    color: white;
+}
+
+.tasks, .done-task {
+    display: grid;
+    gap: 10px;
+}
+
+.task {
+    background: rgb(35, 25, 50);
+    padding: 10px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    color: rgb(100, 60, 150);
+}
+
+
+
+.task.completed {
+    text-decoration: line-through;
+    color: rgb(120, 207, 176);
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.check, .delete {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.check:hover {
+    background: rgb(62, 22, 113);;
+}
+
+.delete:hover {
+    background: rgb(62, 22, 113);;
+}
